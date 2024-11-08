@@ -1,0 +1,63 @@
+@use "variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+/* ------------RESET-------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+body,
+button,
+textarea,
+input {
+  font-family: $main-font;
+}
+
+body {
+  background: radial-gradient(#222, black) padding-box;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $title-color;
+  font-weight: $font-medium;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $container-color;
+}

@@ -1,0 +1,133 @@
+@use "variables" as *;
+
+#calculator {
+  height: 26rem;
+  width: 22rem;
+  border-radius: 1rem;
+  background: radial-gradient(
+    circle at 85.4% 50.8%,
+    rgb(14, 72, 222) 0%,
+    rgb(3, 22, 65) 74.2%
+  );
+  /*background: linear-gradient(cyan,orange, red) padding-box,*/
+}
+
+/*DISPLAY*/
+.displayArea {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.4rem;
+  cursor: default;
+}
+
+.display {
+  font-family: $calculator-font;
+  font-size: 1.5rem;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  width: 100%;
+  height: 90%;
+  margin: 0 1rem;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+
+  .firstValue {
+    color: orange;
+    font-size: 1.3rem;
+  }
+}
+
+/*BUTTONS*/
+button {
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: -1px 6px 1px 0px rgba(0, 0, 0, 0.88);
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+
+button:hover {
+  filter: brightness(105%);
+}
+
+button:active {
+  animation: sink 0.1s forwards;
+}
+
+@keyframes sink {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: -1px 6px 1px 0px rgba(0, 0, 0, 0.88);
+  }
+}
+
+.btnsArea {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: 85%;
+}
+
+.btn-AC {
+  grid-column: span 2;
+  background: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
+}
+
+.btn-equal {
+  grid-row: span 4;
+  background: linear-gradient(
+    111.8deg,
+    rgb(0, 104, 155) 19.8%,
+    rgb(0, 173, 239) 92.1%
+  );
+  height: 80%;
+}
+
+.numbersArea {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-column: 1 / 4; /* Ocupar las tres primeras columnas */
+  grid-row: 2 / 5; /* Ocupar las últimas tres filas */
+}
+
+.numBtn:nth-last-child(2) {
+  grid-column: span 2; /*Button 0*/
+}
+
+/*OPERATION BUTTON*/
+.opBtn {
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+
+/*NUMBER BUTTON*/
+.numBtn {
+  background: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
