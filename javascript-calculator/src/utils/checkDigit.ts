@@ -2,7 +2,7 @@ import { maxDigitsMessage } from "../lib/consts";
 
 export const isOperator = (digit: string) =>
   ["+", "-", "/", "X", "*"].includes(digit);
-export const isHighOperator = (digit: string) => ["X", "/"].includes(digit);
+export const isHighOperator = (digit: string) => ["X", "/", "*"].includes(digit);
 export const isLowOperator = (digit: string) => ["+", "-"].includes(digit);
 export const hasDoubleZero = (digit: string) => digit === "00";
 
