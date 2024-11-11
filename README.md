@@ -26,7 +26,7 @@ git clone https://github.com/jigcolapaolo/javascript-calculator.git
 npm install
 ````
 
-### 4. Ejecutar la aplicación
+### 3. Ejecutar la aplicación
 
 Para ejecutar el proyecto en modo desarrollo:
 
