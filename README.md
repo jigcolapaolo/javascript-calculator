@@ -1,40 +1,40 @@
-# Javascript Calculator <img src="https://github.com/user-attachments/assets/c6654a8f-fd1f-4545-920f-bf532eabb447" alt="App Logo" width="50" height="50" />
+# Javascript Calculator <img src="https://github.com/user-attachments/assets/c6654a8f-fd1f-4545-920f-bf532eabb447" alt="App Logo" width="45" height="45" />
 <br>
 <img src="https://github.com/user-attachments/assets/82b7c38e-8fb7-40dc-b210-e50a75cc3aa4" alt="App Img" width="300" height="300" />
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 - **Framework:** React
-- **Lenguaje:** TypeScript
-- **Estilos:** SCSS
-- **Testing:** Vitest (unitario), Playwright (end-to-end)
+- **Language:** TypeScript
+- **Styles:** SCSS
+- **Testing:** Vitest (unit), Playwright (end-to-end)
 - **Linter:** ESLint
 
-## 📚 Instalación y Configuración
+## 📚 Installation and Setup
 
-Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local.
+Follow these steps to install and run the project in your local environment.
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ````
 git clone https://github.com/jigcolapaolo/javascript-calculator.git
 ````
 
-### 2. Instalar dependencias
+### 2. Install dependencies
 
 ```
 npm install
 ````
 
-### 3. Ejecutar la aplicación
+### 3. Run the application
 
-Para ejecutar el proyecto en modo desarrollo:
+To run the project in development mode:
 
 ````
 npm run dev
 ````
 
-Para construir y ejecutar en modo producción:
+To build and run in production mode:
 
 ````
 npm build
@@ -43,22 +43,22 @@ npm start
 
 ## 🧪 Tests
 
-La app incluye tests unitarios y de extremo a extremo (E2E) con configuraciones específicas para Vitest y Playwright.
+The app includes unit and end-to-end (E2E) tests with specific configurations for Vitest and Playwright.
 
-### Ejecutar Tests Unitarios con Vitest
+### Run Unit Tests with Vitest
 
-- **Unitarios**: Puedes ejecutar todos los tests con:
+1. Use the following command to run all Vitest tests:
 ````
 npm test
 ````
 
-### Ejecutar Tests E2E con Playwright
+### Run E2E Tests with Playwright
 
-1. Usa el siguiente comando para ejecutar todos los tests de Playwright:
+1. Use the following command to run all Playwright tests:
 ````
 npx playwright test
 ````
-Opcional con UI:
+Optional with UI:
 ````
 npx playwright test --ui
 ````
